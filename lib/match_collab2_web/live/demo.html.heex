@@ -1,0 +1,8 @@
+<%= if @live_action in [:demo] do %>
+
+  <Phoenix.LiveView.Components.MultiSelect.multi_select
+  id="demo-select"
+  options={[ %{id: 1, label: "Option1"},
+    %{id: 2, label: "Option2"}]}
+/>
+<% end %>
